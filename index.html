@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="top-container">
+        <h1>Meme Generator</h1>
+        <p>Fill out the form to create your own memes!</p>
+
+        <form id="meme-form">
+            <label id="image-label" for="image-url">Image URL:</label>
+             <input type="text" name="image-url" placeholder="What is the URL of your meme image?" id="image-input" required><br>
+
+            <label id="top-label" for="top-text">Top Text:</label>
+            <input type="text" name="top-text" placeholder="(Optional) what text do you want at the top of the meme?" id="top-text-input"><br>
+
+            <label id="bottom-label" for="bottom-text">Bottom Text:</label>
+            <input type="text" name="bottom-text" placeholder="(Optional) what text do you want at the bottom of the meme?" id="bottom-text-input"><br>
+
+            <button type="submit" id="meme-submit">Create Meme</button>
+        </form>
+    </div>  
+    <div id="created-memes"></div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+    background-color: white; 
+    display: inline; 
+}
+
+#top-container {
+    background-color: hsl(0, 0%, 95%);
+    position: absolute; 
+    width: 100%; 
+    top: 0;
+    padding-top: 20px; 
+}
+
+h1 {
+    text-align: center; 
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 27px; 
+    color: hsl(30, 100%, 60%);
+}
+
+p {
+    text-align: center; 
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold; 
+}
+
+#image-label {
+    padding-left: 40px; 
+    padding-right: 100px; 
+    font-family: 'Roboto Slab', serif;
+}
+
+#top-label {
+    padding-left: 40px; 
+    padding-right: 118px; 
+    font-family: 'Roboto Slab', serif;
+}
+
+#bottom-label {
+    padding-left: 40px; 
+    padding-right: 92px; 
+    font-family: 'Roboto Slab', serif;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 80.5%; 
+    height: 30px; 
+    border: transparent; 
+    border-radius: 2px; 
+}
+
+input:focus {
+    outline: none; 
+}
+
+#image-input {
+    margin-top: 20px; 
+}
+
+#meme-submit {
+    float: right; 
+    margin-right: 50px; 
+    margin-bottom: 20px; 
+    background-color: hsl(30, 100%, 60%); 
+    color: white; 
+    border: transparent; 
+    padding: 10px; 
+    font-size: 15px; 
+    border-radius: 2px; 
+}
+
+#created-memes {
+    margin-top: 23%; 
+    width: 100%;  
+    position: relative;
+}
+
+.newImages {
+    width: 400px;
+    text-align: center;
+    position: relative; 
+    margin-left: 40px; 
+    margin-right: 40px; 
+    margin-top: 20px; 
+    float: left; 
+    float: top; 
+
+  font-family: impact;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0px 2px 0 #000,
+  2px 0px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000,
+  2px 2px 5px #000;
+}
+
+.imageSizing {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
+.textDiv {
+   position: absolute; 
+   top: 5%; 
+   left: 5%;
+   right: 5%;  
+}
+
+.bottomTextDiv {
+    position: absolute; 
+    bottom: 5%; 
+    left: 5%;
+    right: 5%;  
+ }
+
+ .deleteButton {
+    position: absolute; 
+    background-color: transparent; 
+    border: transparent; 
+    font-size: 25px; 
+    color: orange;
+ }
+
+ .deleteButton:hover {
+    background-color: hsla(30, 100%, 60%, 0.6);
+    color: white;  
+ }
+
+ .requiredPopUp {
+    position: absolute; 
+    font-size: 20px; 
+    top: 38%; 
+    left: 50%; 
+    transform: translate(-50%);
+    border: 1px solid orange; 
+    background-color: white; 
+    padding: 5px 30px; 
+ }
+
