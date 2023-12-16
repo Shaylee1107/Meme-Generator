@@ -15,15 +15,15 @@ button.addEventListener('click', function(e){
         body.append(requiredPopUp);
     } else if(imageInput.value !== "") {
         requiredPopUp.remove();
-        memeImage();
+        creatingImage();
         form.reset();
     } else { 
-    memeImage();
+    creatingImage();
     form.reset();
     }
 });
 
-function memeImage() {
+function creatingImage() {
     let imageDiv = document.createElement('div');
     imageDiv.classList.add('newImages');
     let imageValue = imageInput.value;
@@ -32,14 +32,14 @@ function memeImage() {
     newImage.setAttribute('src', imageValue);
     newImage.classList.add('imageSizing');
 
-    function textTop() {
+    function addingTopText() {
         let textDiv = document.createElement('div');
         textDiv.classList.add('textDiv');
         textDiv.innerText = topInput.value; 
         imageDiv.append(textDiv);
     }
 
-    function textBottom() {
+    function addingBottomText() {
         let textDiv = document.createElement('div');
         textDiv.classList.add('bottomTextDiv');
         textDiv.innerText = bottomInput.value; 
@@ -56,8 +56,8 @@ function memeImage() {
         imageDiv.remove(); 
     })
 
-    textTop();
-    textBottom();
+    addingTopText();
+    addingBottomText();
     createdMemes.append(imageDiv);
 };
 
